@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="icon" href="icon.ico">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Beleulmi samy</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>Beleulmi samy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit, natus nemo modi eum harum pariatur libero sint, provident dignissimos in iure itaque temporibus accusamus.</p>
+            <a href="#" class="btn">Contact Me</a>
+        </div>
+        <img src="images/women.png" class="men">
+    </section>
+    <section id="services">
+        <div class="secText">
+            <h2>What I Am Great At</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis libero, optio aliquid quas odit dignissimos ratione doloremque, quod excepturi qui rerum odio mollitia ipsam.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/icon.png">
+                <h3>Web Designing</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/icon1.png">
+                <h3>Web Devlopment</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/icon2.png">
+                <h3>Android Apps</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/icon3.png">
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+
+        <div class="center">
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="secText">
+            <h2>My Masterpiece Collection</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis libero, optio aliquid quas odit dignissimos ratione doloremque, quod excepturi qui rerum odio mollitia ipsam.</p>
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="images/img1.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="images/img2.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="images/img3.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="images/img4.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="images/img5.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="images/img6.jpg">
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="secText">
+            <h2>Ways To Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis libero, optio aliquid quas odit dignissimos ratione doloremque, quod excepturi qui rerum odio mollitia ipsam.</p>
+        </div>
+        <div class="content">
+            <a href="#">
+                <ion-icon name="mail-outline"></ion-icon>belaalmisami@gmail.com
+            </a>
+            <a href="#">
+                <ion-icon name="call-outline"></ion-icon>+213 772 035 502
+            </a>
+            <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>Whatsapp
+            </a>
+            <a href="#">
+                <ion-icon name="logo-skype"></ion-icon>Skype
+            </a>
+        </div>
+        <div class="center">
+            <p class="copyright">Copyright @ 2023 <a href="#">Beleulmi Samy</a>. All Right Reserved</p>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active(){
+            list.forEach((i) =>
+            i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i) =>
+        i.addEventListener('click',active));
+
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
